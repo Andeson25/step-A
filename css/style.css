@@ -30,8 +30,8 @@ body, html {
 }
 #testing-service .testing-service-block {
   position: absolute;
-  width: 35%;
-  right: 100px;
+  width: 40%;
+  right: 50px;
   bottom: 100px;
   padding: 30px 30px 25px 25px;
   background-color: rgba(45, 160, 194, 0.9);
