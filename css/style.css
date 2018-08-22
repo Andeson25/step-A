@@ -559,7 +559,7 @@ section#steps .steps-click .step-box .step-hidden-content {
   color: #ffffff;
   font-family: Roboto Slab, serif;
   font-weight: normal;
-  transition: opacity 0.5s linear;
+  transition: opacity 1s linear;
 }
 section#steps .steps-click .step-box .step-shown-content {
   background-color: #d9d7d7;
@@ -602,14 +602,12 @@ section#steps .steps-click .step-box .step-shown-content .step-shown-box-content
 }
 section#steps .steps-click .steps-left {
   flex-grow: 1;
-  padding-right: 50px;
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 section#steps .steps-click .steps-right {
   flex-grow: 1;
-  padding-left: 50px;
   display: flex;
   justify-content: space-between;
   width: 50%;
