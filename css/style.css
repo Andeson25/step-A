@@ -806,7 +806,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #feather-pain .feather-text .feather-info-block {
   width: 100%;
-  padding: 10px 15px;
+  padding: 20px 15px;
   background-color: #2da0c2;
 }
 #feather-pain .feather-text .feather-info-block ul {
@@ -815,15 +815,14 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   margin: 0;
 }
 #feather-pain .feather-text .feather-info-block ul li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-bottom: 1px solid white;
-  padding-top: 10px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: #ffffff;
   font-family: "Neo Sans Std", sans-serif;
-  font-weight: lighter;
   font-size: 18px;
 }
 #feather-pain .feather-text .feather-info-block ul li:last-child {
@@ -832,19 +831,6 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #feather-pain .feather-text .feather-info-block ul li:first-child {
   padding-top: 0;
-}
-#feather-pain .feather-text .feather-info-block ul li .feather-check {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#feather-pain .feather-text .feather-info-block ul li .feather-check .feather-inner-check {
-  width: 25px !important;
-  height: 12px !important;
-  border-bottom: 3px solid white !important;
-  border-left: 3px solid white !important;
-  transform: rotate(-45deg) !important;
 }
 #feather-pain .feather-text .feather-info-block ul li strong {
   color: #16527d !important;
