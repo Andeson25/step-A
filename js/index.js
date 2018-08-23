@@ -1,4 +1,5 @@
 $(document).ready(() => {
+//10 minutes timer
     let int = null;
     let timerVal = 0;
     let func = () => {
@@ -12,7 +13,7 @@ $(document).ready(() => {
     };
     int = setInterval(func, 100);
 
-
+//approach section
     let buttons = $('.bottom-button-number');
     let labels = $('.approaching-customers-bottom-block-bottom-text-inner');
     let arrows = [];
@@ -46,7 +47,7 @@ $(document).ready(() => {
                 $('.approaching-arrow-up').show();
                 $('.approaching-arrow-down').hide();
             }
-            if (currentIndex != 3 && currentIndex != 0) {
+            if (currentIndex !== 3 && currentIndex !== 0) {
                 $('.approaching-arrow-up').show();
                 $('.approaching-arrow-down').show();
             }
@@ -74,10 +75,9 @@ $(document).ready(() => {
             }
         }
     }
-
+// steps section
     let leftSteps = $('.steps-left .step-box .step-hidden-content');
     let rightSteps = $('.steps-right .step-box .step-hidden-content');
-
     for (let i = 0; i < 3; i++) {
         leftSteps[i].onclick = (e) => {
             leftSteps[i].style.opacity = '0';
@@ -88,7 +88,7 @@ $(document).ready(() => {
             rightSteps[i].style.opacity = '0';
         }
     }
-
+//obtaining section
     let obtainingCounter = 0,
         obtainingButtons = $('.obtaining-arrow-wrapper '),
         obtainingArrow = $('.obtaining-arrow'),
