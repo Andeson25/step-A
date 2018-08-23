@@ -88,4 +88,40 @@ $(document).ready(() => {
             rightSteps[i].style.opacity = '0';
         }
     }
+
+    let obtainingCounter = 0,
+        obtainingButtons = $('.obtaining-arrow-wrapper '),
+        obtainingArrow = $('.obtaining-arrow'),
+        obtainingSteps = $('.obtaining-step-block');
+    obtainingSteps[obtainingCounter].style.opacity = '1';
+    obtainingArrow[0].style.display = 'none';
+    obtainingButtons[0].onclick = () => {
+        if (obtainingCounter === 0)
+            obtainingArrow[0].style.display = 'none';
+        else {
+            obtainingArrow[0].style.display = 'block';
+            obtainingArrow[1].style.display = 'block';
+            obtainingSteps[obtainingCounter].style.opacity = '0';
+            obtainingCounter--;
+            if (obtainingCounter === 0) {
+                obtainingArrow[0].style.display = 'none';
+            }
+            obtainingSteps[obtainingCounter].style.opacity = '1';
+        }
+
+    };
+    obtainingButtons[1].onclick = () => {
+        if (obtainingCounter === 3)
+            obtainingArrow[1].style.display = 'none';
+        else {
+            obtainingArrow[0].style.display = 'block';
+            obtainingArrow[1].style.display = 'block';
+            obtainingSteps[obtainingCounter].style.opacity = '0';
+            obtainingCounter++;
+            if (obtainingCounter === 3) {
+                obtainingArrow[1].style.display = 'none';
+            }
+            obtainingSteps[obtainingCounter].style.opacity = '1';
+        }
+    };
 });
