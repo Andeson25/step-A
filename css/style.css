@@ -38,7 +38,7 @@ body, html {
 }
 #testing-service .testing-service-block h2 {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
@@ -48,7 +48,7 @@ body, html {
 }
 #testing-service .testing-service-block p {
   color: #ffffff;
-  font-family: "Open sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: lighter;
   font-size: 18px;
 }
@@ -97,7 +97,7 @@ body, html {
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   color: #0c88bc;
   background-color: #ffffff;
 }
@@ -148,7 +148,7 @@ body, html {
   align-items: center;
   justify-content: flex-start;
   color: #ffffff;
-  font-family: "Open sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: lighter;
   font-size: 18px;
 }
@@ -196,7 +196,7 @@ body, html {
 }
 #sore-throat .sore-throat-text p {
   color: black;
-  font-family: "Open sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-size: 18px;
 }
 #sore-throat .sore-throat-text p:last-child {
@@ -244,7 +244,7 @@ body, html {
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text h2 {
   color: #0c88bc;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
@@ -254,7 +254,7 @@ body, html {
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text p {
   color: #000000;
-  font-family: "Open sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   line-height: 24px;
   font-size: 18px;
@@ -317,7 +317,7 @@ body, html {
   margin: 0;
   padding-right: 15px;
   color: #0c88bc;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 5px;
@@ -329,7 +329,7 @@ body, html {
   padding-right: 15px;
   margin: 0;
   color: #000000;
-  font-family: "Open sans", sans-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   line-height: 20px;
   font-size: 16px;
@@ -408,7 +408,7 @@ body, html {
   padding: 20px 100px 20px 20px;
 }
 #approaching-customers .approaching-customers-bottom-block .approaching-customers-bottom-block-text p {
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -417,6 +417,11 @@ body, html {
 section#steps {
   padding: 40px;
   width: 100%;
+}
+section#steps p {
+  font-size: 18px;
+  font-family: "Neo Sans Std", sans-serif;
+  color: #000;
 }
 section#steps .steps-wrapper {
   width: 100%;
@@ -440,17 +445,17 @@ section#steps .steps-wrapper .steps-text {
 section#steps .steps-wrapper .steps-text h2 {
   font-size: 24px;
   color: #ffffff;
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
 }
 section#steps .steps-wrapper .steps-text h3 {
   font-size: 18px;
   color: #ffffff;
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
 }
 section#steps .steps-wrapper .steps-text p {
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
@@ -464,7 +469,7 @@ section#steps .steps-wrapper .steps-text p a:hover {
   text-decoration: underline #ffffff;
 }
 section#steps .steps-wrapper .steps-text ul {
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
@@ -495,7 +500,7 @@ section#steps .steps-hint .steps-text-hint {
 }
 section#steps .steps-hint .steps-text-hint p {
   margin: 0;
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -509,7 +514,7 @@ section#steps .steps-click h2 {
   margin: 0 0 10px;
   font-size: 24px;
   color: #16527d;
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
 }
 section#steps .steps-click h2 span {
@@ -597,7 +602,7 @@ section#steps .steps-click .step-box .step-shown-content .step-shown-box-content
 section#steps .steps-click .step-box .step-shown-content .step-shown-box-content p {
   font-size: 18px;
   font-weight: lighter;
-  font-family: "Open Sans", sangs-serif;
+  font-family: "Neo Sans Std", sans-serif;
   color: #000000;
 }
 section#steps .steps-click .steps-left {
@@ -614,6 +619,328 @@ section#steps .steps-click .steps-right {
 }
 section#steps .steps-click .steps-right .step-shown-content .step-shown-box-content {
   width: 100%;
+}
+
+#test {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+#test h2 {
+  display: block;
+  width: 45%;
+  margin-top: 0;
+  color: #0c88bc;
+  font-family: Roboto Slab, serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#test h3 {
+  display: block;
+  width: 50%;
+  margin-top: 0;
+  font-size: 20px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: normal;
+}
+#test .test-warpper {
+  display: flex;
+}
+#test .test-warpper .test-left {
+  width: 50%;
+}
+#test .test-warpper .test-left .test-info-block {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #2da0c2;
+}
+#test .test-warpper .test-left .test-info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#test .test-warpper .test-left .test-info-block ul li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+#test .test-warpper .test-left .test-info-block ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#test .test-warpper .test-left .test-info-block ul li:first-child {
+  padding-top: 0;
+}
+#test .test-warpper .test-left .test-info-block ul li .test-check {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#test .test-warpper .test-left .test-info-block ul li .test-check .test-inner-check {
+  width: 25px !important;
+  height: 12px !important;
+  border-bottom: 3px solid white !important;
+  border-left: 3px solid white !important;
+  transform: rotate(-45deg) !important;
+}
+#test .test-warpper .test-left .test-info-block ul li span {
+  margin-left: 10px;
+}
+#test .test-warpper .test-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#test .test-warpper .test-right .test-circle {
+  margin-top: 20px;
+  background-color: #63b32e;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 270px;
+  width: 270px;
+}
+#test .test-warpper .test-right .test-circle h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: normal;
+}
+#test .test-important {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+}
+#test .test-important .test-important-left {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #0c88bc;
+}
+#test .test-important .test-important-left img {
+  width: 50px;
+}
+#test .test-important .test-important-left h2 {
+  margin: 5px 0 0 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: bold;
+}
+#test .test-important .test-important-right {
+  flex-grow: 1;
+  padding: 10px 20px;
+  background: linear-gradient(to right, transparent, #d9e6f3, #d9e6f3);
+}
+#test .test-important .test-important-right p {
+  font-family: "Neo Sans Std", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+#feather-pain {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+#feather-pain .feather-bg {
+  width: 40%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/fether-pain-bg.png");
+}
+#feather-pain .feather-text {
+  width: 60%;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+#feather-pain .feather-text h2 {
+  display: block;
+  margin-top: 0;
+  color: #0c88bc;
+  font-family: Roboto Slab, serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+#feather-pain .feather-text p {
+  font-size: 18px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+#feather-pain .feather-text p:last-child {
+  margin: 0;
+  font-size: 12px;
+}
+#feather-pain .feather-text hr {
+  border-color: #0088bc;
+  border-width: 2px 0 0;
+  margin-bottom: 2px;
+}
+#feather-pain .feather-text .feather-info-block {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #2da0c2;
+}
+#feather-pain .feather-text .feather-info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#feather-pain .feather-text .feather-info-block ul li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+#feather-pain .feather-text .feather-info-block ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#feather-pain .feather-text .feather-info-block ul li:first-child {
+  padding-top: 0;
+}
+#feather-pain .feather-text .feather-info-block ul li .feather-check {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#feather-pain .feather-text .feather-info-block ul li .feather-check .feather-inner-check {
+  width: 25px !important;
+  height: 12px !important;
+  border-bottom: 3px solid white !important;
+  border-left: 3px solid white !important;
+  transform: rotate(-45deg) !important;
+}
+#feather-pain .feather-text .feather-info-block ul li strong {
+  color: #16527d !important;
+}
+#feather-pain .feather-text .feather-info-block ul li span {
+  margin-left: 10px;
+}
+
+#swab-test {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+#swab-test .swab-test-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#swab-test .swab-test-bg img {
+  width: 100%;
+}
+#swab-test .swab-test-text {
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+#swab-test .swab-test-text h2 {
+  display: block;
+  margin-top: 0;
+  color: #0c88bc;
+  font-family: Roboto Slab, serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+#swab-test .swab-test-text p {
+  font-size: 18px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+#swab-test .swab-test-text .swab-test-info {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #d9d8d8;
+}
+#swab-test .swab-test-text .swab-test-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+#swab-test .swab-test-text .swab-test-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#swab-test .swab-test-text .swab-test-info ul li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0c88bc;
+  padding-top: 10px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  color: black;
+  font-family: "Neo Sans Std", sans-serif;
+  font-size: 22px;
+}
+#swab-test .swab-test-text .swab-test-info ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#swab-test .swab-test-text .swab-test-info ul li:first-child {
+  padding-top: 0;
+}
+#swab-test .swab-test-text .swab-test-info ul li .swab-test-cell-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#swab-test .swab-test-text .swab-test-info ul li .swab-test-cell-text h2 {
+  margin: 0;
+  color: #0c88bc;
+  font-size: 40px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: bold;
+}
+#swab-test .swab-test-text .swab-test-info ul li strong {
+  color: #16527d !important;
+}
+#swab-test .swab-test-text .swab-test-info ul li span {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
