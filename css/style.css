@@ -1143,10 +1143,11 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  position: relative;
 }
 #dispensing .dispensing-inner .dispensing-block {
-  transform: translate(40px, 40px);
-  position: relative;
+  position: absolute;
+  z-index: 2;
   background-color: #0088BC;
   display: inline-flex;
   justify-content: center;
@@ -1154,26 +1155,35 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   width: 70px;
   height: 70px;
 }
+#dispensing .dispensing-inner .dispensing-block:nth-child(1) {
+  left: 3%;
+  top: 5%;
+}
 #dispensing .dispensing-inner .dispensing-block:nth-child(2) {
-  transform: translate(600px, 60px);
+  left: 52%;
+  top: 7%;
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(2) .dispensing-inner-text-block .dispensing-triangle {
   top: calc(22%);
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(3) {
-  transform: translate(40px, 220px);
+  left: 8%;
+  top: 37%;
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(3) .dispensing-inner-text-block .dispensing-triangle {
   top: calc(40%);
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(4) {
-  transform: translate(400px, 320px);
+  left: 50%;
+  top: 50%;
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(5) {
-  transform: translate(-240px, 380px);
+  left: 5%;
+  top: 70%;
 }
 #dispensing .dispensing-inner .dispensing-block:nth-child(6) {
-  transform: translate(260px, 500px);
+  left: 52%;
+  top: 75%;
 }
 #dispensing .dispensing-inner .dispensing-block .dispensing-inner-text-block {
   transition: width 0.5s linear;
@@ -1184,7 +1194,8 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   border-left: 2px solid #0088bc;
   background-color: #F6F6F6;
   padding: 15px 40px 15px 20px;
-  width: 400px;
+  visibility: hidden;
+  width: 0;
 }
 #dispensing .dispensing-inner .dispensing-block .dispensing-inner-text-block .dispensing-triangle {
   margin: 0;
@@ -1208,9 +1219,10 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   right: 10px;
 }
 #dispensing .dispensing-inner .dispensing-block .dispensing-inner-text-block p {
-  transition: font-size 0.5s linear;
+  transition: all 0.5s linear;
   width: 100%;
   line-height: 24px;
+  display: none;
   margin: 0;
   font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
@@ -1218,6 +1230,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   color: #000000;
 }
 #dispensing .dispensing-inner .dispensing-checkmark-block {
+  transition: opacity 0.5s linear;
   opacity: 0;
   top: 0;
   left: 0;
@@ -1235,9 +1248,10 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   width: 40px;
   border-bottom: 4px solid white;
   border-left: 4px solid white;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(5px, -2.5px);
 }
 #dispensing .dispensing-inner h2 {
+  transition: opacity 0.5s linear;
   opacity: 1;
   cursor: pointer;
   text-align: center;
@@ -1278,6 +1292,28 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #dispensing .dispensing-reset .dispensing-reset-right * {
   margin: 0;
+}
+
+#references {
+  padding: 30px;
+}
+#references h2 {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  color: #0c88bc;
+  font-family: Roboto Slab, serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#references h3 {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Neo Sans Std", sans-serif;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
