@@ -81,25 +81,33 @@ $(document).ready(() => {
     let stepsRightButtons = $('.steps-right .steps-box-number');
     let stepsRightText = $('.steps-right  .steps-box-text');
     let stepsIndex = 0;
-    stepsLeftButtons[stepsIndex].classList.add('steps-active');
-    stepsLeftText[stepsIndex].classList.add('steps-show');
-    stepsRightButtons[stepsIndex].classList.add('steps-active');
-    stepsRightText[stepsIndex].classList.add('steps-show');
-
+    stepsLeftButtons[0].classList.add('steps-active');
+    stepsLeftText[0].classList.add('steps-show');
+    stepsRightButtons[0].classList.add('steps-active');
+    stepsRightText[0].classList.add('steps-show');
 
     for (let i = 0; i < stepsLeftButtons.length; i++) {
         stepsLeftButtons[i].onclick = () => {
-            console.log('prev' + stepsIndex);
             stepsLeftButtons[stepsIndex].classList.remove('steps-active');
             stepsLeftText[stepsIndex].classList.remove('steps-show');
             stepsRightButtons[stepsIndex].classList.remove('steps-active');
             stepsRightText[stepsIndex].classList.remove('steps-show');
             stepsLeftButtons[i].classList.add('steps-active');
             stepsLeftText[i].classList.add('steps-show');
+            stepsRightButtons[i].classList.add('steps-active');
+            stepsRightText[i].classList.add('steps-show');
+            stepsIndex = i;
+        }
+        stepsRightButtons[i].onclick = () => {
+            stepsLeftButtons[stepsIndex].classList.remove('steps-active');
+            stepsLeftText[stepsIndex].classList.remove('steps-show');
+            stepsRightButtons[stepsIndex].classList.remove('steps-active');
+            stepsRightText[stepsIndex].classList.remove('steps-show');
             stepsLeftButtons[i].classList.add('steps-active');
             stepsLeftText[i].classList.add('steps-show');
+            stepsRightButtons[i].classList.add('steps-active');
+            stepsRightText[i].classList.add('steps-show');
             stepsIndex = i;
-            console.log('cur' + stepsIndex);
         }
     }
 //obtaining section
@@ -163,7 +171,7 @@ $(document).ready(() => {
                 checkmarks[i].style.opacity = '1';
                 text_blocks[i].style.visibility = 'visible';
                 text_blocks[i].style.minHeight = '150px';
-                text_blocks[i].style.width = '400px';
+                text_blocks[i].style.width = '350px';
                 setTimeout(() => {
                     text_blocks_p[i].style.display = 'block';
                     text_blocks[i].style.minHeight = 'unset';
