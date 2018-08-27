@@ -190,4 +190,24 @@ $(document).ready(() => {
 
         }
     }
+    //dispensing small arrows
+    let innerArrows = $('.dispensing-inner-arrows');
+    for (let i = 0; i < 6; i++) {
+        innerArrows[i].firstElementChild.onclick = (e) => {
+            if (i === 0) {
+                crosses[i].click();
+            } else {
+                blocks[i-1].click();
+                crosses[i].click();
+            }
+        };
+        innerArrows[i].lastElementChild.onclick = (e) => {
+            if (i === innerArrows.length-1) {
+                crosses[i].click();
+            } else {
+                blocks[i + 1].click();
+                crosses[i].click();
+            }
+        }
+    }
 });
