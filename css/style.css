@@ -961,7 +961,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   align-items: center;
   background-color: #b4b2b1;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
 }
 #obtaining .obtaining-inner {
   position: relative;
