@@ -11,7 +11,7 @@ $(document).ready(() => {
             clearInterval(int);
         }
     };
-    int = setInterval(func, 100);
+    int = setInterval(func, 200);
 
 //approach section
     let buttons = $('.bottom-button-number');

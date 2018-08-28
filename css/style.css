@@ -1,3 +1,5 @@
+@import url(http://allfont.ru/allfont.css?fonts=courier);
+@import url(http://allfont.ru/allfont.css?fonts=courier-new);
 body, html {
   padding: 0;
   margin: 0;
@@ -17,6 +19,17 @@ body, html {
   box-sizing: border-box;
 }
 
+h1, h2 {
+  font-family: "Courier", sans-serif !important;
+}
+h1 span, h2 span {
+  font-family: "Courier New Std", sans-serif !important;
+}
+
+p, li, h3 {
+  font-family: "Courier New Std", sans-serif !important;
+}
+
 #testing-service {
   height: 100vh;
   width: 100%;
@@ -34,11 +47,11 @@ body, html {
   right: 50px;
   bottom: 100px;
   padding: 30px 30px 25px 25px;
-  background-color: rgba(45, 160, 194, 0.9);
+  background-color: rgba(44, 151, 188, 0.9);
 }
 #testing-service .testing-service-block h2 {
   color: #ffffff;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier", sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
@@ -48,7 +61,7 @@ body, html {
 }
 #testing-service .testing-service-block p {
   color: #ffffff;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier New Std", sans-serif;
   font-weight: lighter;
   font-size: 18px;
 }
@@ -83,7 +96,7 @@ body, html {
   z-index: 1;
   width: 100%;
   height: 100%;
-  animation: drawTimer 1s linear forwards;
+  animation: drawTimer 2s linear forwards;
   background-image: linear-gradient(180deg, transparent 50%, #9abfde 50%), linear-gradient(90deg, #9abfde 50%, #6aa9d2 50%);
 }
 #testing-service .testing-service-block .testing-service-timer-block .inner {
@@ -97,7 +110,7 @@ body, html {
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier", sans-serif;
   color: #0c88bc;
   background-color: #ffffff;
 }
@@ -244,17 +257,18 @@ body, html {
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text h2 {
   color: #0c88bc;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier", sans-serif !important;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text h2 span {
+  font-family: "Courier", sans-serif !important;
   color: #16527d;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text p {
   color: #000000;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier New", sans-serif;
   font-weight: normal;
   line-height: 24px;
   font-size: 18px;
@@ -317,22 +331,22 @@ body, html {
   margin: 0;
   padding-right: 15px;
   color: #0c88bc;
-  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 24px;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner h2 span {
+  padding-top: 10px;
+  display: block;
+  font-weight: normal;
   color: #000000;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner p {
   padding-right: 15px;
   margin: 0;
   color: #000000;
-  font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner img {
   height: 160px;
@@ -360,8 +374,8 @@ body, html {
   width: 80px;
   color: #ffffff;
   cursor: pointer;
-  font-family: Roboto Slab, serif;
-  font-weight: lighter;
+  font-family: "Courier", serif;
+  font-weight: normal;
   position: relative;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-bottom-block-bottom-buttons .bottom-buttons-numbers .bottom-button-number:after {
@@ -431,10 +445,10 @@ section#steps .steps-wrapper {
   background-color: #0c88bc;
 }
 section#steps .steps-wrapper img {
-  left: 5%;
+  left: 2.5%;
   bottom: 0;
   position: absolute;
-  width: 400px;
+  width: 425px;
 }
 section#steps .steps-wrapper .steps-text {
   padding: 20px;
@@ -443,7 +457,7 @@ section#steps .steps-wrapper .steps-text {
   width: 60%;
 }
 section#steps .steps-wrapper .steps-text h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #ffffff;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
@@ -501,7 +515,7 @@ section#steps .steps-hint .steps-text-hint {
 section#steps .steps-hint .steps-text-hint p {
   margin: 0;
   font-family: "Neo Sans Std", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
@@ -512,14 +526,14 @@ section#steps .steps-click {
 }
 section#steps .steps-click h2 {
   margin: 0 0 10px;
-  font-size: 24px;
+  font-size: 20px;
   color: #16527d;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
 }
 section#steps .steps-click h2 span {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
 }
 section#steps .steps-click .step-image-wrapper {
@@ -540,17 +554,17 @@ section#steps .steps-click .steps-boxes {
   padding-left: 20px;
   width: 65%;
 }
-section#steps .steps-click .step-box {
+section#steps .steps-click .steps-boxes .step-box {
   background-color: #c3c1c0;
   width: 100%;
-  height: 150px;
+  height: 125px;
   margin-bottom: 20px;
   position: relative;
 }
-section#steps .steps-click .step-box:last-child {
+section#steps .steps-click .steps-boxes .step-box:last-child {
   margin-bottom: 0;
 }
-section#steps .steps-click .step-box .step-hidden-content {
+section#steps .steps-click .steps-boxes .step-box .step-hidden-content {
   background-color: #c3c1c0;
   position: absolute;
   z-index: 1;
@@ -566,7 +580,7 @@ section#steps .steps-click .step-box .step-hidden-content {
   font-weight: normal;
   transition: opacity 1s linear;
 }
-section#steps .steps-click .step-box .step-shown-content {
+section#steps .steps-click .steps-boxes .step-box .step-shown-content {
   background-color: #d9d7d7;
   display: flex;
   position: absolute;
@@ -574,7 +588,7 @@ section#steps .steps-click .step-box .step-shown-content {
   width: 100%;
   height: 100%;
 }
-section#steps .steps-click .step-box .step-shown-content .step-checkmark-wrapper {
+section#steps .steps-click .steps-boxes .step-box .step-shown-content .step-checkmark-wrapper {
   height: 100%;
   width: 30%;
   display: flex;
@@ -582,14 +596,14 @@ section#steps .steps-click .step-box .step-shown-content .step-checkmark-wrapper
   align-items: center;
   background-color: #3a98c7;
 }
-section#steps .steps-click .step-box .step-shown-content .step-checkmark-wrapper .step-checkmark {
+section#steps .steps-click .steps-boxes .step-box .step-shown-content .step-checkmark-wrapper .step-checkmark {
   height: 20px;
   width: 40px;
   border-bottom: 4px solid white;
   border-left: 4px solid white;
   transform: rotate(-45deg);
 }
-section#steps .steps-click .step-box .step-shown-content .step-shown-box-content {
+section#steps .steps-click .steps-boxes .step-box .step-shown-content .step-shown-box-content {
   width: 70%;
   margin: 0;
   height: 100%;
@@ -599,8 +613,8 @@ section#steps .steps-click .step-box .step-shown-content .step-shown-box-content
   padding-left: 20px;
   padding-right: 10px;
 }
-section#steps .steps-click .step-box .step-shown-content .step-shown-box-content p {
-  font-size: 18px;
+section#steps .steps-click .steps-boxes .step-box .step-shown-content .step-shown-box-content p {
+  font-size: 16px;
   font-weight: lighter;
   font-family: "Neo Sans Std", sans-serif;
   color: #000000;
