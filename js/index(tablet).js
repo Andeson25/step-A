@@ -232,7 +232,7 @@ $(document).ready(() => {
     //    console.log(i.target)
     // });
     $('body').on('mouseup', (e) => {
-        if (!e.target.classList.contains('dispensing-block-h2') && !e.target.classList.contains('.dispensing-inner-text-block') && !e.target.classList.contains('.dispensing-block-p')) {
+        if (!e.target.classList.contains('dispensing-block-h2') && !e.target.classList.contains('.dispensing-inner-text-block') && !e.target.classList.contains('.dispensing-block-p') && !e.target.classList.contains('dispensing-inner-arrow')&& !e.target.classList.contains('dispensing-inner-arrows')) {
             crosses.click();
         }
     });
