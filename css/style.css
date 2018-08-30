@@ -7,7 +7,7 @@ body, html {
 
 @keyframes drawTimer {
   0% {
-    transform: rotate(-120deg);
+    transform: rotate(-90deg);
   }
   100% {
     transform: rotate(0);
@@ -23,7 +23,7 @@ h1, h2 {
   font-family: "Courier", sans-serif !important;
 }
 h1 span, h2 span {
-  font-family: "Courier New Std", sans-serif !important;
+  font-family: "Courier", sans-serif !important;
 }
 
 p, li, h3 {
@@ -70,7 +70,7 @@ p, li, h3 {
 }
 #testing-service .testing-service-block .testing-service-timer-block {
   position: absolute;
-  right: 50px;
+  right: 25px;
   height: 120px;
   width: 120px;
   top: -40px;
@@ -136,17 +136,17 @@ p, li, h3 {
   margin-bottom: 20px;
 }
 #this-module-will .this-module-will-container {
-  padding: 40px 20px;
+  padding: 60px 60px;
   background-image: url("../assets/img/second-slide-bg.png");
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: -40% center;
 }
 #this-module-will .this-module-will-container .this-module-will-info-block {
   width: 50%;
   padding: 10px 15px;
-  background-color: rgba(45, 160, 194, 0.9);
+  background-color: rgba(44, 151, 188, 0.9);
 }
 #this-module-will .this-module-will-container .this-module-will-info-block ul {
   list-style: none;
@@ -197,6 +197,8 @@ p, li, h3 {
 #sore-throat .sore-throat-text {
   padding-right: 80px;
   width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 #sore-throat .sore-throat-text h2 {
   margin-top: 0;
@@ -209,17 +211,16 @@ p, li, h3 {
 }
 #sore-throat .sore-throat-text p {
   color: black;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier New Std", sans-serif !important;
+  font-weight: lighter;
   font-size: 18px;
 }
 #sore-throat .sore-throat-text p:last-child {
-  margin: 0;
+  margin-top: 40px;
+  justify-self: flex-end;
+  border-top: 2px solid #0088bc;
   font-size: 14px;
-}
-#sore-throat .sore-throat-text hr {
-  border-color: #0088bc;
-  border-width: 2px 0 0;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 #sore-throat figure {
   background-image: url("../assets/img/sore-throat.png");
@@ -242,7 +243,7 @@ p, li, h3 {
   padding: 20px;
   min-height: 78vh;
   width: 100%;
-  background-image: url("../assets/img/fourth-slide-bg.jpg");
+  background-image: url("../assets/img/fourth-slide-bg.png");
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -445,19 +446,19 @@ section#steps .steps-wrapper {
   background-color: #0c88bc;
 }
 section#steps .steps-wrapper img {
-  left: 2.5%;
+  left: 2%;
   bottom: 0;
   position: absolute;
-  width: 425px;
+  width: 400px;
 }
 section#steps .steps-wrapper .steps-text {
   padding: 20px;
   display: block;
   float: right;
-  width: 60%;
+  width: 65%;
 }
 section#steps .steps-wrapper .steps-text h2 {
-  font-size: 28px;
+  font-size: 32px;
   color: #ffffff;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
@@ -509,12 +510,12 @@ section#steps .steps-hint .steps-text-hint {
   height: 100%;
   vertical-align: middle;
   flex-grow: 1;
-  padding: 10px 40px;
+  padding: 10px 20px;
   background: linear-gradient(to right, transparent, #d9e6f3, #d9e6f3);
 }
 section#steps .steps-hint .steps-text-hint p {
   margin: 0;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier New Std", sans-serif !important;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -544,14 +545,11 @@ section#steps .steps-click .step-image-wrapper {
   align-items: center;
 }
 section#steps .steps-click .step-image-wrapper img {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  height: 600px;
+  height: 500px;
 }
 section#steps .steps-click .steps-boxes {
   position: relative;
   z-index: 2;
-  padding-left: 20px;
   width: 65%;
 }
 section#steps .steps-click .steps-boxes .step-box {
@@ -655,7 +653,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   display: block;
   width: 50%;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -712,29 +710,13 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #test .test-warpper .test-right {
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  position: relative;
 }
-#test .test-warpper .test-right .test-circle {
-  margin-top: 20px;
-  background-color: #63b32e;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  height: 270px;
-  width: 270px;
-}
-#test .test-warpper .test-right .test-circle h2 {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 24px;
-  font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+#test .test-warpper .test-right img {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  width: 110%;
 }
 #test .test-important {
   margin-top: 40px;
@@ -780,13 +762,11 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #feather-pain .feather-bg {
   width: 40%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../assets/img/fether-pain-bg.png");
+  background-image: url("../assets/img/sore-throat.png");
 }
 #feather-pain .feather-text {
   width: 60%;
@@ -906,15 +886,15 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   margin: 0;
 }
 #swab-test .swab-test-text .swab-test-info ul li {
-  padding-bottom: 10px;
   border-bottom: 1px solid #0c88bc;
-  padding-top: 10px;
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   color: black;
+  line-height: 24px;
+  font-weight: normal;
   font-family: "Neo Sans Std", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 #swab-test .swab-test-text .swab-test-info ul li:last-child {
   border-bottom: 0;
@@ -931,20 +911,20 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 #swab-test .swab-test-text .swab-test-info ul li .swab-test-cell-text h2 {
   margin: 0;
   color: #0c88bc;
-  font-size: 40px;
-  font-family: "Neo Sans Std", sans-serif;
+  font-size: 50px;
   font-weight: bold;
+  padding: 20px 0;
 }
 #swab-test .swab-test-text .swab-test-info ul li strong {
   color: #16527d !important;
 }
 #swab-test .swab-test-text .swab-test-info ul li span {
+  padding: 10px 0;
   margin-left: 10px;
 }
 
 #obtaining {
   width: 100%;
-  height: 100vh;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -965,7 +945,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   display: block;
   width: 100%;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -975,33 +955,61 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   align-items: center;
   background-color: #b4b2b1;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: 95vh;
 }
-#obtaining .obtaining-inner {
+#obtaining .obtaining-slider .obtaining-inner {
   position: relative;
   width: 90%;
   height: 100%;
   background: linear-gradient(to right, white, #d9e6f3, #d9e6f3);
 }
-#obtaining .obtaining-inner .obtaining-step-block {
+#obtaining .obtaining-slider .obtaining-inner img {
+  position: absolute;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(1), #obtaining .obtaining-slider .obtaining-inner img:nth-child(2), #obtaining .obtaining-slider .obtaining-inner img:nth-child(3), #obtaining .obtaining-slider .obtaining-inner img:nth-child(4) {
+  right: 30%;
+  height: 96%;
+  top: 2%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(4) {
+  right: 15%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(5) {
+  bottom: 10%;
+  left: 25%;
+  width: 25%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(6) {
+  right: 35%;
+  height: 96%;
+  top: 2%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(7) {
+  bottom: 40%;
+  right: 5%;
+  width: 25%;
+}
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block {
   transition: opacity 0.5s linear;
   opacity: 0;
   position: absolute;
   width: 25%;
 }
-#obtaining .obtaining-inner .obtaining-step-block.obtaining-step-first {
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block.obtaining-step-first {
   left: 80px;
   bottom: 80px;
 }
-#obtaining .obtaining-inner .obtaining-step-block.obtaining-step-second, #obtaining .obtaining-inner .obtaining-step-block.obtaining-step-third {
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block.obtaining-step-second, #obtaining .obtaining-slider .obtaining-inner .obtaining-step-block.obtaining-step-third {
   top: 120px;
   left: 80px;
 }
-#obtaining .obtaining-inner .obtaining-step-block.obtaining-step-fourth {
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block.obtaining-step-fourth {
   top: 40px;
   left: 80px;
 }
-#obtaining .obtaining-inner .obtaining-step-block h3 {
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block h3 {
   display: block;
   width: 100%;
   margin-top: 0;
@@ -1012,7 +1020,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   font-size: 24px;
   margin-bottom: 10px;
 }
-#obtaining .obtaining-inner .obtaining-step-block p {
+#obtaining .obtaining-slider .obtaining-inner .obtaining-step-block p {
   margin-top: 0;
   font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
@@ -1073,13 +1081,13 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   display: block;
   width: 100%;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
 #reading-the-results img {
   margin: 10px 0;
-  width: 50%;
+  width: 60%;
 }
 #reading-the-results .reading-the-results-negative {
   margin-top: 10px;
@@ -1089,15 +1097,17 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   padding: 20px;
 }
 #reading-the-results .reading-the-results-negative .reading-the-results-negative-inner {
+  height: 100%;
   position: absolute;
   right: 0;
-  top: -150px;
+  top: 0;
   background-color: #7CC8BA;
   padding: 25px;
   text-align: right;
 }
 #reading-the-results .reading-the-results-negative .reading-the-results-negative-inner img {
   width: 150px;
+  margin-bottom: 20px;
 }
 #reading-the-results .reading-the-results-negative .reading-the-results-negative-inner h2 {
   font-size: 18px;
@@ -1144,7 +1154,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   display: block;
   width: 100%;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -1322,12 +1332,22 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   font-size: 40px;
   margin-bottom: 10px;
 }
+#references p {
+  font-size: 16px;
+}
+#references li {
+  color: black;
+  font-weight: normal;
+  font-family: "Neo Sans Std", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
 #references h3 {
   display: block;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

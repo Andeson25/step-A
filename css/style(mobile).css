@@ -5,7 +5,7 @@ body, html {
 
 @keyframes drawTimer {
   0% {
-    transform: rotate(-120deg);
+    transform: rotate(-90deg);
   }
   100% {
     transform: rotate(0);

@@ -89,6 +89,7 @@ $(document).ready(() => {
         }
     }
 //obtaining section
+    let gifs = $('.obtaining-inner img');
     let obtainingCounter = 0,
         obtainingButtons = $('.obtaining-arrow-wrapper '),
         obtainingArrow = $('.obtaining-arrow'),
@@ -96,8 +97,10 @@ $(document).ready(() => {
     obtainingSteps[obtainingCounter].style.opacity = '1';
     obtainingArrow[0].style.display = 'none';
     obtainingButtons[0].onclick = () => {
-        if (obtainingCounter === 0)
+        if (obtainingCounter === 0) {
             obtainingArrow[0].style.display = 'none';
+
+        }
         else {
             obtainingArrow[0].style.display = 'block';
             obtainingArrow[1].style.display = 'block';
@@ -107,6 +110,7 @@ $(document).ready(() => {
                 obtainingArrow[0].style.display = 'none';
             }
             obtainingSteps[obtainingCounter].style.opacity = '1';
+            runGifs(obtainingCounter)
         }
 
     };
@@ -122,14 +126,78 @@ $(document).ready(() => {
                 obtainingArrow[1].style.display = 'none';
             }
             obtainingSteps[obtainingCounter].style.opacity = '1';
+            runGifs(obtainingCounter)
         }
     };
+
+
+    let gifrunned = false;
+    $(window).scroll(function () {
+        // This is then function used to detect if the element is scrolled into view
+        function elementScrolled(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+        if (elementScrolled('.obtaining-slider') && !gifrunned) {
+            gifrunned = true;
+            runGifs();
+        }
+    });
+
+    function runGifs(index = 0) {
+        if (index === 0) {
+            if (obtainingCounter === 0)
+                gifs[0].style.opacity = "1";
+            setTimeout(() => {
+                if (obtainingCounter === 0) {
+                    gifs[index].style.opacity = "0";
+                    gifs[+1].style.opacity = "1";
+                }
+            }, 4000)
+            gifs[2].style.opacity = "0";
+        }
+        if (index === 1) {
+            if (gifs[3].style.opacity === "1") {
+                gifs[2].style.opacity = "1";
+                gifs[3].style.opacity = "0";
+                gifs[4].style.opacity = "0";
+            } else {
+                gifs[0].style.opacity = "0";
+                gifs[1].style.opacity = "0";
+                gifs[2].style.opacity = "1";
+            }
+        }
+        if (index === 2) {
+            if (gifs[5].style.opacity === "1") {
+                gifs[4].style.opacity = "1";
+                gifs[3].style.opacity = "1";
+                gifs[5].style.opacity = "0";
+                gifs[6].style.opacity = "0";
+            } else {
+                gifs[2].style.opacity = "0";
+                gifs[3].style.opacity = "1";
+                gifs[4].style.opacity = "1";
+            }
+        }
+        if (index === 3) {
+            gifs[3].style.opacity = "0";
+            gifs[4].style.opacity = "0";
+            gifs[5].style.opacity = "1";
+            gifs[6].style.opacity = "1";
+        }
+    }
+
     //dispensing
     let blocks = $('.dispensing-block h2');
     let checkmarks = $('.dispensing-checkmark-block');
     let text_blocks = $('.dispensing-inner-text-block');
     let text_blocks_p = $('.dispensing-inner-text-block p');
     let crosses = $('.dispensing-inner-text-block img');
+    var block_wrappers = $(".dispensing-block");
     $('.dispensing-reset')[0].onclick = (e) => {
         for (let i = 0; i < blocks.length; i++) {
             blocks.removeAttr('style');
@@ -142,11 +210,23 @@ $(document).ready(() => {
     // blocks.on('click',(i)=>{
     //    console.log(i.target)
     // });
+    $('body').on('mouseup', (e) => {
+        if (!e.target.classList.contains('dispensing-block-h2') && !e.target.classList.contains('.dispensing-inner-text-block') && !e.target.classList.contains('.dispensing-block-p')) {
+            crosses.click();
+        }
+    });
     for (let i = 0; i < blocks.length; i++) {
         blocks[i].onclick = (e) => {
-            if (!blocks[i].hasAttribute('style')||blocks[i].getAttribute('style').length === 0) {
+            if (!blocks[i].hasAttribute('style') || blocks[i].getAttribute('style').length === 0) {
+
+
                 blocks[i].style.opacity = '0';
                 checkmarks[i].style.opacity = '1';
+                if (i > 0)
+                    for (let j = 0; j < crosses.length; j++) {
+                        if(j!=i)
+                            crosses[j].click()
+                    }
                 text_blocks[i].style.visibility = 'visible';
                 text_blocks[i].style.minHeight = '150px';
                 text_blocks[i].style.width = '400px';
