@@ -678,6 +678,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   align-items: stretch;
 }
 #test .test-warpper .test-left {
+  margin-left: 5%;
   width: 40%;
 }
 #test .test-warpper .test-left .test-info-block {
@@ -726,7 +727,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   margin-left: 10px;
 }
 #test .test-warpper .test-right {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
