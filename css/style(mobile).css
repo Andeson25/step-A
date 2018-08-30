@@ -300,6 +300,8 @@ h3 {
   flex-direction: column;
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-button > h2:first-child {
+  font-family: "Courier New Std", sans-serif !important;
+  font-weight: bolder !important;
   padding: 15px 0;
   border-bottom: 2px solid #9e9c9c;
 }
@@ -544,6 +546,8 @@ section#steps .steps-click .steps-boxes .steps-button {
   flex-direction: column;
 }
 section#steps .steps-click .steps-boxes .steps-button > h2 {
+  font-family: "Courier New Std", sans-serif !important;
+  font-weight: bolder !important;
   border-bottom: 1px solid #adabaa;
 }
 section#steps .steps-click .steps-boxes .steps-button h2 {
