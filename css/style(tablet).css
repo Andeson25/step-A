@@ -1,3 +1,5 @@
+@import url(http://allfont.ru/allfont.css?fonts=courier);
+@import url(http://allfont.ru/allfont.css?fonts=courier-new);
 body, html {
   padding: 0;
   margin: 0;
@@ -11,6 +13,27 @@ body, html {
     transform: rotate(0);
   }
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: "Courier", sans-serif !important;
+}
+h1 span, h2 span {
+  font-family: "Courier", sans-serif !important;
+}
+
+p, li, h3 {
+  font-family: "Courier New Std", sans-serif !important;
+}
+
+h3 {
+  font-size: 18px !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -34,7 +57,7 @@ body, html {
   left: 5%;
   bottom: 50px;
   padding: 30px 30px 25px 25px;
-  background-color: rgba(45, 160, 194, 0.9);
+  background-color: rgba(44, 151, 188, 0.9);
 }
 #testing-service .testing-service-block h2 {
   color: #ffffff;
@@ -83,7 +106,7 @@ body, html {
   z-index: 1;
   width: 100%;
   height: 100%;
-  animation: drawTimer 1s linear forwards;
+  animation: drawTimer 2s linear forwards;
   background-image: linear-gradient(180deg, transparent 50%, #9abfde 50%), linear-gradient(90deg, #9abfde 50%, #6aa9d2 50%);
 }
 #testing-service .testing-service-block .testing-service-timer-block .inner {
@@ -206,6 +229,7 @@ body, html {
   font-size: 14px;
 }
 #sore-throat .sore-throat-text hr {
+  margin-top: 30px;
   border-color: #0088bc;
   border-width: 2px 0 0;
   margin-bottom: 2px;
@@ -234,7 +258,7 @@ body, html {
   background-size: cover;
   display: flex;
   justify-content: flex-end;
-  background-position: center center;
+  background-position: 0 center;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text {
   width: 70%;
@@ -243,17 +267,18 @@ body, html {
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text h2 {
   color: #0c88bc;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier", sans-serif !important;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text h2 span {
+  font-family: "Courier", sans-serif !important;
   color: #16527d;
 }
 #approaching-customers .approaching-customers-top-block .approaching-customers-top-block-top-text p {
   color: #000000;
-  font-family: "Neo Sans Std", sans-serif;
+  font-family: "Courier New", sans-serif;
   font-weight: normal;
   line-height: 24px;
   font-size: 18px;
@@ -315,22 +340,22 @@ body, html {
   margin: 0;
   padding-right: 15px;
   color: #0c88bc;
-  font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 24px;
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner h2 span {
+  padding-top: 10px;
+  display: block;
+  font-weight: normal;
   color: #000000;
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner p {
   padding-right: 15px;
   margin: 0;
   color: #000000;
-  font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-customers-bottom-block-bottom-text .approaching-customers-bottom-block-bottom-text-inner img {
   height: 160px;
@@ -439,7 +464,7 @@ section#steps .steps-wrapper .steps-text {
   padding: 20px;
   display: block;
   float: right;
-  width: 60%;
+  width: 50%;
 }
 section#steps .steps-wrapper .steps-text h2 {
   font-size: 24px;
@@ -532,8 +557,6 @@ section#steps .steps-click .step-image-wrapper {
   align-items: center;
 }
 section#steps .steps-click .step-image-wrapper img {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   height: 100%;
 }
 section#steps .steps-click .steps-boxes {
@@ -709,25 +732,8 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   justify-content: flex-start;
   align-items: center;
 }
-#test .test-warpper .test-right .test-circle {
-  margin-top: 20px;
-  background-color: #63b32e;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  height: 220px;
-  width: 220px;
-}
-#test .test-warpper .test-right .test-circle h2 {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 24px;
-  font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+#test .test-warpper .test-right img {
+  width: 100% !important;
 }
 #test .test-important {
   margin-top: 40px;
@@ -809,7 +815,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../assets/img/fether-pain-bg.png");
+  background-image: url("../assets/img/sore-throat.png");
 }
 #feather-pain .feather-text .feather-info-block-wrapper .feather-info-block {
   width: 70%;
@@ -965,13 +971,43 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   align-items: center;
   background-color: #b4b2b1;
   width: 100%;
-  height: calc(80vh - 100px);
+  height: calc(100vh - 5vh);
 }
 #obtaining .obtaining-inner {
   position: relative;
   width: 84%;
   height: 100%;
   background: linear-gradient(to right, white, #d9e6f3, #d9e6f3);
+}
+#obtaining .obtaining-inner img {
+  position: absolute;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+#obtaining .obtaining-inner img:nth-child(1), #obtaining .obtaining-inner img:nth-child(2), #obtaining .obtaining-inner img:nth-child(3), #obtaining .obtaining-inner img:nth-child(4) {
+  right: 10%;
+  height: 80%;
+  top: 10%;
+}
+#obtaining .obtaining-inner img:nth-child(4) {
+  right: 10%;
+  height: 60%;
+  top: 20%;
+}
+#obtaining .obtaining-inner img:nth-child(5) {
+  bottom: 40%;
+  left: 10%;
+  width: 30%;
+}
+#obtaining .obtaining-inner img:nth-child(6) {
+  right: 10%;
+  height: 60%;
+  top: 20%;
+}
+#obtaining .obtaining-inner img:nth-child(7) {
+  bottom: 10%;
+  left: 10%;
+  width: 30%;
 }
 #obtaining .obtaining-inner .obtaining-step-block {
   transition: opacity 0.5s linear;
@@ -999,7 +1035,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px !important;
   margin-bottom: 10px;
 }
 #obtaining .obtaining-inner .obtaining-step-block p {
@@ -1069,7 +1105,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 #reading-the-results img {
   margin: 10px 0;
-  width: 50%;
+  width: 60%;
 }
 #reading-the-results .reading-the-results-negative {
   margin-top: 10px;
@@ -1081,7 +1117,8 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 #reading-the-results .reading-the-results-negative .reading-the-results-negative-inner {
   position: absolute;
   right: 0;
-  top: -150px;
+  top: 0;
+  height: 100%;
   background-color: #7CC8BA;
   padding: 25px;
   text-align: right;
@@ -1378,12 +1415,22 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
   font-size: 40px;
   margin-bottom: 10px;
 }
+#references p {
+  font-size: 16px;
+}
+#references li {
+  color: black;
+  font-weight: normal;
+  font-family: "Neo Sans Std", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
 #references h3 {
   display: block;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style(tablet).css.map */

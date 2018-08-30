@@ -197,7 +197,6 @@ $(document).ready(() => {
     let text_blocks = $('.dispensing-inner-text-block');
     let text_blocks_p = $('.dispensing-inner-text-block p');
     let crosses = $('.dispensing-inner-text-block img');
-    var block_wrappers = $(".dispensing-block");
     $('.dispensing-reset')[0].onclick = (e) => {
         for (let i = 0; i < blocks.length; i++) {
             blocks.removeAttr('style');
@@ -218,7 +217,6 @@ $(document).ready(() => {
     for (let i = 0; i < blocks.length; i++) {
         blocks[i].onclick = (e) => {
             if (!blocks[i].hasAttribute('style') || blocks[i].getAttribute('style').length === 0) {
-
 
                 blocks[i].style.opacity = '0';
                 checkmarks[i].style.opacity = '1';
