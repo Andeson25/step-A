@@ -1,3 +1,5 @@
+@import url(http://allfont.ru/allfont.css?fonts=courier);
+@import url(http://allfont.ru/allfont.css?fonts=courier-new);
 body, html {
   padding: 0;
   margin: 0;
@@ -11,6 +13,27 @@ body, html {
     transform: rotate(0);
   }
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: "Courier", sans-serif !important;
+}
+h1 span, h2 span {
+  font-family: "Courier", sans-serif !important;
+}
+
+p, li, h3 {
+  font-family: "Courier New Std", sans-serif !important;
+}
+
+h3 {
+  font-size: 16px !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -36,13 +59,13 @@ body, html {
   width: 100%;
   bottom: 50px;
   padding: 100px 15px 10px 15px;
-  background-color: #2da0c2;
+  background-color: #2c97bc;
 }
 #testing-service .testing-service-block h2 {
   color: #ffffff;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 #testing-service .testing-service-block h2 span {
@@ -86,7 +109,7 @@ body, html {
   z-index: 1;
   width: 100%;
   height: 100%;
-  animation: drawTimer 1s linear forwards;
+  animation: drawTimer 2s linear forwards;
   background-image: linear-gradient(180deg, transparent 50%, #9abfde 50%), linear-gradient(90deg, #9abfde 50%, #6aa9d2 50%);
 }
 #testing-service .testing-service-block .testing-service-timer-block .inner {
@@ -122,7 +145,7 @@ body, html {
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 #this-module-will .this-module-will-container {
@@ -136,7 +159,7 @@ body, html {
 #this-module-will .this-module-will-info-block {
   width: 100%;
   padding: 10px 20px;
-  background-color: rgba(45, 160, 194, 0.9);
+  background-color: #2c97bc;
 }
 #this-module-will .this-module-will-info-block ul {
   list-style: none;
@@ -194,7 +217,7 @@ body, html {
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 5px;
 }
 #sore-throat .sore-throat-text p {
@@ -286,7 +309,7 @@ body, html {
   margin: 0;
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -321,12 +344,13 @@ body, html {
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-button .approaching-button-text h2 {
   color: #2da0c2;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
   margin: 10px 0;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 #approaching-customers .approaching-customers-bottom-block-bottom-buttons .approaching-button .approaching-button-text h2:nth-child(2) {
   color: #000000;
@@ -487,6 +511,7 @@ section#steps .steps-click h2 {
   font-weight: bold;
 }
 section#steps .steps-click h2 span {
+  font-family: "Courier New Std", sans-serif !important;
   font-weight: normal;
   font-size: 16px;
   color: #000;
@@ -531,7 +556,7 @@ section#steps .steps-click .steps-boxes .steps-button h2 {
   margin: 0;
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -628,7 +653,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   padding: 0;
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -663,7 +688,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 }
 section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button .steps-right-text h2 {
   color: #2da0c2;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   text-align: left;
@@ -694,7 +719,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 #test h3 {
@@ -707,6 +732,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-weight: normal;
 }
 #test .test-warpper {
+  padding-top: 20px;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -766,6 +792,9 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   justify-content: flex-start;
   align-items: center;
 }
+#test .test-warpper .test-right img {
+  width: 100%;
+}
 #test .test-warpper .test-right .test-circle {
   margin-top: 20px;
   background-color: #63b32e;
@@ -783,12 +812,11 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   text-align: center;
   color: #ffffff;
   padding: 0;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
 #test .test-important {
-  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -830,11 +858,11 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 #feather-pain .feather-bg {
   width: 100%;
   margin: 10px auto 0;
-  height: 40vh;
-  background-image: url("../assets/img/feather-pain-mobile-bg.png");
+  height: 45vh;
+  background-image: url("../assets/img/sore-throat.png");
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  background-position: center 30%;
   background-repeat: no-repeat;
 }
 #feather-pain .feather-text {
@@ -847,7 +875,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 #feather-pain .feather-text p {
@@ -919,7 +947,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 #swab-test .swab-test-text p {
@@ -981,7 +1009,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 #swab-test .swab-test-info ul li .swab-test-cell-text h2 {
   margin: 0;
   color: #0c88bc;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: bold;
 }
@@ -1007,7 +1035,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 #obtaining h3 {
@@ -1033,6 +1061,39 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   width: 70%;
   height: 100%;
   background: linear-gradient(to right, white, #d9e6f3, #d9e6f3);
+}
+#obtaining .obtaining-slider .obtaining-inner img {
+  position: absolute;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(1), #obtaining .obtaining-slider .obtaining-inner img:nth-child(2), #obtaining .obtaining-slider .obtaining-inner img:nth-child(3), #obtaining .obtaining-slider .obtaining-inner img:nth-child(4) {
+  right: 15%;
+  height: 80%;
+  top: 10%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(3) {
+  right: 15%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(4) {
+  right: 15%;
+  height: 60%;
+  top: 20%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(5) {
+  bottom: 40%;
+  left: 10%;
+  width: 37.5%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(6) {
+  right: 15%;
+  height: 60%;
+  top: 20%;
+}
+#obtaining .obtaining-slider .obtaining-inner img:nth-child(7) {
+  bottom: 40%;
+  left: 10%;
+  width: 40%;
 }
 #obtaining .obtaining-step-block {
   transition: opacity 0.5s linear;
@@ -1060,7 +1121,9 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 24px !important;
+  font-family: "Courier", sans-serif !important;
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 #obtaining .obtaining-step-block p {
@@ -1113,7 +1176,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 #reading-the-results h2:not(:first-child) {
@@ -1190,7 +1253,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 #dispensing h2:not(:first-child) {
@@ -1210,7 +1273,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 #dispensing .dispensing-inner {
   width: 100%;
   height: 50vh;
-  background-image: url("../assets/img/dispencing-bg.png");
+  background-image: url("../assets/img/dispensing-bg.png");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 20% center;
@@ -1240,7 +1303,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   padding: 0;
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
 }
@@ -1275,7 +1338,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 }
 #dispensing .dispensing-buttons .dispensing-button .dispensing-text h2 {
   color: #2da0c2;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Neo Sans Std", sans-serif;
   font-weight: normal;
   text-align: left;
@@ -1295,7 +1358,12 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 }
 
 #references {
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
+}
+#references a {
+  -ms-word-break: break-all;
+  word-break: break-all;
 }
 #references h2 {
   display: block;
@@ -1305,15 +1373,25 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
   font-family: Roboto Slab, serif;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 10px;
+}
+#references p {
+  font-size: 16px;
+}
+#references li {
+  color: black;
+  font-weight: normal;
+  font-family: "Neo Sans Std", sans-serif;
+  font-size: 16px;
+  margin: 10px;
 }
 #references h3 {
   display: block;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Neo Sans Std", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style(mobile).css.map */

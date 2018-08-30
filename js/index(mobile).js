@@ -11,7 +11,7 @@ $(document).ready(() => {
             clearInterval(int);
         }
     };
-    int = setInterval(func, 100);
+    int = setInterval(func, 200);
 
 //approach section
     let buttons = $('.approaching-button');
@@ -45,6 +45,7 @@ $(document).ready(() => {
         }
     }
 //obtaining section
+    let gifs = $('.obtaining-inner img');
     let obtainingCounter = 0,
         obtainingButtons = $('.obtaining-arrow-wrapper '),
         obtainingArrow = $('.obtaining-arrow'),
@@ -66,6 +67,7 @@ $(document).ready(() => {
             }
             obtainingSteps[obtainingCounter].style.display = 'block';
             obtainingSteps[obtainingCounter].style.opacity = '1';
+            runGifs(obtainingCounter)
         }
 
     };
@@ -83,8 +85,69 @@ $(document).ready(() => {
             }
             obtainingSteps[obtainingCounter].style.display = 'block';
             obtainingSteps[obtainingCounter].style.opacity = '1';
+            runGifs(obtainingCounter)
         }
     };
+
+    let gifrunned = false;
+    $(window).scroll(function () {
+        // This is then function used to detect if the element is scrolled into view
+        function elementScrolled(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+        if (elementScrolled('.obtaining-slider') && !gifrunned) {
+            gifrunned = true;
+            runGifs();
+        }
+    });
+
+    function runGifs(index = 0) {
+        if (index === 0) {
+            if (obtainingCounter === 0)
+                gifs[0].style.opacity = "1";
+            setTimeout(() => {
+                if (obtainingCounter === 0) {
+                    gifs[index].style.opacity = "0";
+                    gifs[+1].style.opacity = "1";
+                }
+            }, 4000)
+            gifs[2].style.opacity = "0";
+        }
+        if (index === 1) {
+            if (gifs[3].style.opacity === "1") {
+                gifs[2].style.opacity = "1";
+                gifs[3].style.opacity = "0";
+                gifs[4].style.opacity = "0";
+            } else {
+                gifs[0].style.opacity = "0";
+                gifs[1].style.opacity = "0";
+                gifs[2].style.opacity = "1";
+            }
+        }
+        if (index === 2) {
+            if (gifs[5].style.opacity === "1") {
+                gifs[4].style.opacity = "1";
+                gifs[3].style.opacity = "1";
+                gifs[5].style.opacity = "0";
+                gifs[6].style.opacity = "0";
+            } else {
+                gifs[2].style.opacity = "0";
+                gifs[3].style.opacity = "1";
+                gifs[4].style.opacity = "1";
+            }
+        }
+        if (index === 3) {
+            gifs[3].style.opacity = "0";
+            gifs[4].style.opacity = "0";
+            gifs[5].style.opacity = "1";
+            gifs[6].style.opacity = "1";
+        }
+    }
     //dispensing
     let dispensingButtons = $('.dispensing-button');
     let currentDispensingButton = 0;

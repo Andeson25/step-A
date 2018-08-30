@@ -1404,6 +1404,7 @@ section#steps .steps-click .steps-right .step-shown-content .step-shown-box-cont
 }
 
 #references {
+  width: 100%;
   padding: 30px;
 }
 #references h2 {
