@@ -533,6 +533,7 @@ section#steps .steps-click h2 {
   font-weight: bold;
 }
 section#steps .steps-click h2 span {
+  font-family: "Courier New Std", sans-serif !important;
   font-weight: normal;
   font-size: 14px;
   color: #000;
