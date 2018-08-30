@@ -1273,7 +1273,7 @@ section#steps .steps-click .steps-right .steps-right-buttons .steps-right-button
 #dispensing .dispensing-inner {
   width: 100%;
   height: 50vh;
-  background-image: url("../assets/img/dispensing-bg.png");
+  background-image: url("../assets/img/dispensing-bg-tablet.png");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 20% center;
