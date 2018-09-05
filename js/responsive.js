@@ -2,7 +2,6 @@ let ranScript = "";
 
 function desktopScripts() {
     if ($(window).width() >= 991.98) {
-        alert('ran desktop');
         ranScript = 'DESKTOP';
         $(document).ready(() => {
 //10 minutes timer
@@ -264,7 +263,6 @@ function desktopScripts() {
 
 function tabletScripts() {
     if ($(window).width() < 991.97 && $(window).width() >= 767.98) {
-        alert('ran tablet');
         ranScript = 'TABLET';
         $(document).ready(() => {
 //10 minutes timer
@@ -537,7 +535,6 @@ function tabletScripts() {
             let innerArrows = $('#strep-a-tablet .dispensing-inner-arrows');
             for (let i = 0; i < 6; i++) {
                 innerArrows[i].firstElementChild.onclick = (e) => {
-                    alert('arrow')
                     if (i === 0) {
                         crosses[i].click();
                     } else {
@@ -559,8 +556,8 @@ function tabletScripts() {
 }
 
 function mobilesScripts() {
+
     if ($(window).width() < 767.98) {
-        alert('ran mobile');
         ranScript = 'MOBILE';
         $(document).ready(() => {
 //10 minutes timer
